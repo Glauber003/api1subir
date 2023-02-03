@@ -14,6 +14,7 @@ routes.post('/user/create', UserController.addUser)
 routes.post('/user/login', SessionController.createSession)
 
 routes.post('/animal/add', AnimalController.addAnimal)
+routes.get('/animal/todos', AnimalController.getAnimal)
 
 routes.use(authMiddlewars)
 

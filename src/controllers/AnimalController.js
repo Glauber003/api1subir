@@ -43,10 +43,10 @@ class AnimalController{
 
 
   
-    async getProdutos(req, res){
-        const produtos = await Produto.findAll()
+    async getAnimal(req, res){
+        const animal = await Animal.findAll()
 
-        return res.json(produtos)
+        return res.json(animal)
 
     }
 
@@ -57,18 +57,18 @@ class AnimalController{
 
     }
 
-    async updateProduto(req, res){
+    async updateAnimal(req, res){
         const {id , preco } = req.body
 
        const prodUp = await Produto.update({
-            preco: preco
+            nome_animal: nome_animal
         },{
             where:{
                 id: id
             }
         })
-        const produto = await Produto.findByPk(id)
-        return res.json(produto)
+        const animal = await Animal.findByPk(id)
+        return res.json(Animal)
 
     }
 
