@@ -50,15 +50,17 @@ class AnimalController{
 
     }
 
-    async getProduto(req, res){
+   /*
+   //funçao pra pegar animal e4xepcigo ainda nao terminada
+   async getProduto(req, res){
         const {id} = req.params
         const produto = await Produto.findByPk(id)
         return res.json(produto)
 
-    }
+    }*/
 
     async updateAnimal(req, res){
-        const {id , preco } = req.body
+        const {id , nome_animal } = req.body
 
        const prodUp = await Produto.update({
             nome_animal: nome_animal
