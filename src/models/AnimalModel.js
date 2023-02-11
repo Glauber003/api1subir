@@ -8,7 +8,7 @@ import database from '../database/index.js'
             type: DataTypes.STRING,
             allowNull: false
         },
-        especie_aninal: {
+        especie_animal: {
             type: DataTypes.STRING,
             allowNull: false
         },
@@ -17,7 +17,7 @@ import database from '../database/index.js'
             type: DataTypes.STRING,
             allowNull: false
         },
-        descricao_pet: {
+        descricao_animal: {
             type: DataTypes.STRING,
             allowNull: false
         },

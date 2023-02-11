@@ -8,13 +8,13 @@ class AnimalController{
     }
     
     async addAnimal(req, res){
-        const { nome_animal, especie_aninal,idade,descricao_pet,porte,raca,sexo,local_animal,peso } = req.body
+        const { nome_animal, especie_animal,idade,descricao_animal,porte,raca,sexo,local_animal,peso } = req.body
 
         await Animal.create({
             nome_animal: nome_animal,
-            especie_aninal: especie_aninal,
+            especie_animal: especie_animal,
             idade:idade,
-            descricao_pet:descricao_pet,
+            descricao_animal:descricao_animal,
             porte:porte,
             raca:raca,
             sexo:sexo,
@@ -27,9 +27,9 @@ class AnimalController{
             mensagem: 'Animal Criado Com sucesso',
             data:{
                 nome_animal,
-                especie_aninal,
+                especie_animal,
                 idade,
-                descricao_pet,
+                descricao_animal,
                 porte,
                 raca,
                 sexo,
